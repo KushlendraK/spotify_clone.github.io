@@ -1,0 +1,78 @@
+#menubar
+{
+	color: black;
+	font-weight: bolder;
+	font-family: vardana;
+	
+	border-radius: 10px;
+	background-color: lightgreen;
+	text-align: center;
+
+}
+body
+{
+	background-color:  #b2ede3;
+}
+
+
+table
+{
+	/*border: dashed;*/
+	 
+	width: 100%;
+	height: 700px;
+	background-color: skyblue;
+	max-height: 100%;
+}
+ 
+#id1
+{
+	 
+ 	height: 100%;
+ 	 
+}
+.kk
+{
+
+}
+
+#kkid
+{
+	background-color: black ;
+}
+
+#kkid1
+{
+	background-color: white;
+}
+
+#madeby
+{
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+	text-align: center;
+}
+#q1
+{
+	width: 90px;
+}
+
+#int
+{
+	color: white;
+}
+
+.pop
+{
+	height: 20px;
+}
+
+#kk{
+	background-image: url("black.jpg") ;
+	
+}
+#kk1
+{
+	background-image: url("city2.jpg");
+}
