@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Spotify</title>
+    <!-- CDN FOR ICONS LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css  ">
+
+</head>
+<style>
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+        display: grid;
+        place-items: center;
+        /* background-color: red; */
+    }
+    .log_in_spotify {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        /* background-color: #1ed760; */
+        /* width: 80%; */
+    }
+
+     /* ==========logo */
+     .free_listening {
+        display: grid;
+        place-items: center;
+
+    }
+
+    .signup_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 45px;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    font-size: 17px;
+}
+    
+
+    
+    .signup_logo .fa-spotify {
+        font-size: 50px;
+    }
+
+    h4 {
+        font-size: 39px;
+        padding-left: 8px;
+    }
+
+    .fb_login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        width: 390px;
+        padding: 13px;
+        border-radius: 40px;
+        background-color: #405A93;
+        color: white;
+        margin-bottom: 22px;
+    }
+
+    .fb_login a {
+        color: white;
+        text-decoration: none;
+        padding-left: 6px;
+        text-transform: uppercase;
+
+    }
+    .apple{
+        background-color: black;
+    }
+
+    .apple a{
+       text-transform: uppercase;
+    }
+
+    .google_signup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(127, 123, 123);
+        width: 390px;
+        padding: 10px;
+        border-radius: 25px;
+        background-color: white;
+        /* margin-top: 10px; */
+        margin-bottom: 22px;
+
+    }
+
+    .google_signup a {
+        text-decoration: none;
+        padding-left: 6px;
+        color: black;
+        text-transform: uppercase;
+
+
+    }
+
+     /* ============OR LINE */
+
+     .or_line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 10px;
+        margin-bottom: 22px;
+
+    }
+
+    .child_line {
+        width: 133px;
+        height: 0.8px;
+        /* color: gray; */
+        background-color: rgb(185, 180, 180);
+    }
+
+
+      /* ============MAIN SIGN UP FORM */
+
+      .two_login [type] {
+        width: 420px;
+        height: 52px;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid rgb(165, 159, 159);
+        margin-top: 10px;
+
+
+    }
+
+
+    .two_login [placeholder] {
+        font-size: 15px;
+        font-weight: 500;
+        /* letter-spacing: 0.8px; */
+    }
+
+
+    .two_login a {
+        color: rgb(28, 122, 28);
+    }
+
+    .margin__bottom{
+        margin-bottom: 15px;
+    }
+
+
+
+
+    .login_btn_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+   .btn {
+        margin-top: 13px;
+        padding: 18px;
+        background-color: #1ed760;
+        border: none;
+        border-radius: 30px;
+        width: 150px;
+    }
+
+  .btn a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        text-transform: uppercase;
+
+    }
+
+    .para{
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    .sign_up_soptify{
+        margin-top: 20px;
+    }
+
+
+
+</style>
+
+<body>
+    <div class="log_in_spotify">
+
+        
+        <div class="free_listening">
+
+            <div class="signup_logo">
+                <div>
+                    <i class="fa-brands fa-spotify"></i>
+                </div>
+                <h4 class="texts__logo">
+                    Spotify</h4>
+            </div>
+
+            <h1>To continue, log in to Spotify.</h1>
+
+            <div class="social_links">
+
+                <div class="fb_login">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="#">continue with facebook</a>
+                </div>
+
+
+                <div class="fb_login apple">
+                    <i class="fa-brands fa-apple"></i>
+                    <a href="#">continue with apple</a>
+                </div>
+
+                <div class="google_signup">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M21.6 12.2272C21.6 11.5181 21.5364 10.8363 21.4182 10.1818H12V14.0499H17.3818C17.15 15.2999 16.4455 16.359 15.3864 17.0681V19.5772H18.6182C20.5091 17.8363 21.6 15.2727 21.6 12.2272Z"
+                            fill="#4285F4"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 21.9999C14.7 21.9999 16.9636 21.1044 18.6181 19.5772L15.3863 17.0681C14.4909 17.6681 13.3454 18.0226 12 18.0226C9.39542 18.0226 7.19087 16.2635 6.40451 13.8999H3.0636V16.4908C4.70905 19.759 8.09087 21.9999 12 21.9999Z"
+                            fill="#34A853"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.40455 13.9001C6.20455 13.3001 6.09091 12.6592 6.09091 12.0001C6.09091 11.341 6.20455 10.7001 6.40455 10.1001V7.50916H3.06364C2.38636 8.85916 2 10.3864 2 12.0001C2 13.6137 2.38636 15.141 3.06364 16.491L6.40455 13.9001Z"
+                            fill="#FBBC05"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 5.97727C13.4681 5.97727 14.7863 6.48182 15.8227 7.47273L18.6909 4.60455C16.9591 2.99091 14.6954 2 12 2C8.09087 2 4.70905 4.24091 3.0636 7.50909L6.40451 10.1C7.19087 7.73636 9.39542 5.97727 12 5.97727Z"
+                            fill="#EA4335"></path>
+                    </svg>
+                    <a href="#">continue with Google</a>
+                </div>
+
+
+                <div class="google_signup">
+                   
+                    <a href="#">continue with phone number</a>
+                </div>
+            </div>
+
+
+            <div class="or_line">
+                <div class="child_line">
+
+                </div>
+
+                <div class="child_or">
+                    <p>or</p>
+
+                </div>
+
+
+                <div class="child_line">
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="contanier__center">
+                <form class="log_in_center log_in" > 
+ 
+                    <div class="two_login">
+                        <div class="margin__bottom">
+                            <div>
+                                <label>Email address or username</label>
+                            </div>
+                            <input type="email" placeholder="Email address or username">
+    
+                        </div>
+
+                        <div class="margin__bottom">
+                            <div>
+                                <label>Password</label>
+                            </div>
+    
+                            <div>
+                                <div>
+                                    <input class="block" type="email" placeholder="Password">
+                                </div>
+                                <a href="#">Forgot your password?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="login_btn_container">
+                        <div class="remember">
+                            <input type="checkbox">
+                            <label>Remember Me</label>
+                        </div>
+                        <div class="login_btn">
+                            <button class="btn">
+                                <a href="#"> Log in </a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="para" >
+                        <p>Don't have an account?</p>
+                    </div>
+
+                    <div class="google_signup sign_up_soptify ">
+                   
+                        <a href="sign.html">sign up for soptify</a>
+                    </div>
+                </div>
+
+
+                </form>
+            </div>
+
+
+    </div>
+   
+</body>
+
+</html>

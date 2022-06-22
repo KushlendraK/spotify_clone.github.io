@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing up - Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css  ">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: grid;
+        place-items: center;
+        /* background-color: red; */
+    }
+
+    .sign_up_form {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        /* background-color: #1ed760; */
+        /* width: 80%; */
+    }
+
+
+    .sign__up {
+        display: grid;
+        justify-items: center;
+    }
+
+
+    .baap {
+        display: flex;
+        gap: 15px;
+
+    }
+
+    .block {
+        display: b;
+    }
+
+    .margin__bottom {
+        margin-bottom: 20px;
+    }
+
+    /* ==========logo */
+    .free_listening {
+        display: grid;
+        place-items: center;
+
+    }
+
+    .signup_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 45px;
+    }
+
+    h1 {
+        margin-bottom: 27px;
+    }
+
+   
+
+    h4 {
+        font-size: 25px;
+        padding-left: 8px;
+    }
+
+    /* =============social links */
+    .fb_login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        width: 310px;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #405A93;
+        color: white;
+        margin-bottom: 22px;
+    }
+
+    .fb_login a {
+        color: white;
+        text-decoration: none;
+        padding-left: 6px;
+    }
+
+    .google_signup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        width: 310px;
+        padding: 10px;
+        border-radius: 25px;
+        background-color: white;
+        /* margin-top: 10px; */
+        margin-bottom: 22px;
+
+    }
+
+    .google_signup a {
+        text-decoration: none;
+        padding-left: 6px;
+        color: black;
+
+
+    }
+
+    /* ============OR LINE */
+
+    .or_line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 10px;
+        margin-bottom: 22px;
+
+    }
+
+    .child_line {
+        width: 133px;
+        height: 0.8px;
+        /* color: gray; */
+        background-color: rgb(185, 180, 180);
+    }
+
+
+    /* ============MAIN SIGN UP FORM */
+
+    .input__4box [type] {
+        width: 420px;
+        height: 52px;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid rgb(165, 159, 159);
+        margin-top: 10px;
+
+
+    }
+
+    .input__4box [placeholder] {
+        font-size: 15px;
+        font-weight: 500;
+        /* letter-spacing: 0.8px; */
+    }
+
+
+    .input__4box a {
+        color: rgb(28, 122, 28);
+    }
+
+    /* =============BIRTH DATE */
+
+    .birth__date [type] {
+        margin-top: 12px;
+        border-radius: 6px;
+        border: 1px solid rgb(165, 159, 159);
+        height: 52px;
+
+    }
+
+    .birth__date .label {
+        margin-bottom: 10px;
+    }
+
+    .birth__date .year {
+        width: 90px;
+        padding: 10px;
+    }
+
+    .birth__date .month {
+        width: 180px;
+        padding: 10px;
+    }
+
+    .birth__date .day {
+        width: 120px;
+        padding: 10px;
+    }
+
+    /* ===========GENDER SECIRON
+    */
+
+    .center_grid1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gender__section .label {
+        margin-bottom: 10px;
+
+    }
+
+    .radio_section {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+
+        gap: 30px;
+
+    }
+
+    .radio input [type] {
+        font-size: 50px;
+
+    }
+
+    .radio label {
+        margin-left: 8px;
+        text-transform: capitalize;
+    }
+
+    .margin__bottom [type="checkbox"] {
+        margin-top: 18px;
+
+    }
+
+    .margin__bottom p {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .margin__bottom p span {
+        font-size: 13px;
+        /* color:  #1ed760; */
+
+    }
+
+    .margin__bottom p span a {
+        /* font-size: 13px; */
+        color: rgb(28, 122, 28);
+
+    }
+
+    .margin__bottom .btn {
+        margin-top: 13px;
+        padding: 18px;
+        background-color: #1ed760;
+        border: none;
+        border-radius: 30px;
+        width: 150px;
+    }
+
+    .margin__bottom .btn a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+
+
+    }
+
+
+    /* =======FOOTER SECTION==
+    ============= */
+
+    .footer {
+        display: grid;
+        place-items: center;
+
+    }
+
+    .footer .log_in span {
+        font-size: 17px;
+
+    }
+</style>
+
+<body>
+    <div class="sign_up_form">
+
+
+        <div class="free_listening">
+
+            <div class="signup_logo">
+                <i class="fa-3x fa-brands fa-spotify"></i>
+                <h4 class="texts__logo">
+                    Spotify</h4>
+            </div>
+
+            <h1>Sign up for free to start listening.</h1>
+
+            <div class="social_links">
+
+                <div class="fb_login">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="https://facebook.com" target="_blank">Sign up with Facebook</a>
+                </div>
+
+                <div class="google_signup">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M21.6 12.2272C21.6 11.5181 21.5364 10.8363 21.4182 10.1818H12V14.0499H17.3818C17.15 15.2999 16.4455 16.359 15.3864 17.0681V19.5772H18.6182C20.5091 17.8363 21.6 15.2727 21.6 12.2272Z"
+                            fill="#4285F4"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 21.9999C14.7 21.9999 16.9636 21.1044 18.6181 19.5772L15.3863 17.0681C14.4909 17.6681 13.3454 18.0226 12 18.0226C9.39542 18.0226 7.19087 16.2635 6.40451 13.8999H3.0636V16.4908C4.70905 19.759 8.09087 21.9999 12 21.9999Z"
+                            fill="#34A853"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.40455 13.9001C6.20455 13.3001 6.09091 12.6592 6.09091 12.0001C6.09091 11.341 6.20455 10.7001 6.40455 10.1001V7.50916H3.06364C2.38636 8.85916 2 10.3864 2 12.0001C2 13.6137 2.38636 15.141 3.06364 16.491L6.40455 13.9001Z"
+                            fill="#FBBC05"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 5.97727C13.4681 5.97727 14.7863 6.48182 15.8227 7.47273L18.6909 4.60455C16.9591 2.99091 14.6954 2 12 2C8.09087 2 4.70905 4.24091 3.0636 7.50909L6.40451 10.1C7.19087 7.73636 9.39542 5.97727 12 5.97727Z"
+                            fill="#EA4335"></path>
+                    </svg>
+                    <a href="https://google.com" target="_blank">Sign up with Google</a>
+                </div>
+            </div>
+
+            <div class="or_line">
+                <div class="child_line">
+
+                </div>
+
+                <div class="child_or">
+                    <p>or</p>
+
+                </div>
+
+
+                <div class="child_line">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="container__center">
+
+            <form class="main__sign__up ">
+
+                <div class="input__4box sign__up">
+
+                    <div class="margin__bottom">
+                        <div>
+                            <label>What's your email?</label>
+                        </div>
+
+                        <div>
+                            <div>
+                                <input class="block" type="email" placeholder="Enter your email.">
+                            </div>
+                            <a href="#">Use phone number instead.</a>
+                        </div>
+                    </div>
+
+                    <div class="margin__bottom">
+                        <div>
+                            <label>Confirm your email</label>
+                        </div>
+                        <input type="email" placeholder="Enter your email again.">
+
+                    </div>
+
+                    <div class="margin__bottom">
+                        <div>
+                            <label>Create a password</label>
+                        </div>
+                        <input type="email" placeholder="Create a password.">
+
+                    </div>
+
+                    <div class="margin__bottom">
+                        <div>
+                            <label>What should we call you?</label>
+                        </div>
+
+                        <div>
+                            <input type="email" placeholder="Enter a profile name.">
+                        </div>
+                        <span> This appears on your profile.</span>
+                    </div>
+
+                    <div class="birth__date margin__bottom">
+                        <div class="label">
+                            <label>What's your date of birth?</label>
+                        </div>
+
+                        <div class="baap">
+
+                            <div>
+                                <div class="parents">
+                                    <div>
+                                        <div>
+                                            <label>year</label>
+                                        </div>
+                                        <input class="year" type="year" placeholder="YYYY">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <div class="parents">
+
+                                    <div>
+                                        <div>
+                                            <label>Month</label>
+                                        </div>
+                                        <input class="month" type="text" placeholder="month">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <div class="parents">
+                                    <div>
+                                        <div>
+                                            <label>Day</label>
+                                        </div>
+                                        <input class="day" type="year" placeholder="DD">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="gender__section margin__bottom center_grid1">
+
+
+                    <div class="center__grid">
+
+                        <div class="label">
+                            <label>What's your gender?</label>
+                        </div>
+
+
+                        <div class="radio_section">
+
+
+
+                            <div>
+                                <input type="radio" name="a1">
+                                <label>male</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="a1">
+                                <label>female</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="a1">
+                                <label>Non-binary</label>
+                            </div>
+
+                        </div>
+
+
+                        <div class="margin__bottom">
+                            <input type="checkbox">
+                            I would perfer not to recive marketing massages from Spotify
+                        </div>
+
+                        <div class="margin__bottom">
+                            <input type="checkbox">
+                            <span> Share my registration data with Spotify's content providers <br> for marketing
+                            purposes.</span>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+        </div>
+
+
+
+        <div class=" footer margin__bottom">
+            <p>
+                <span>
+                    By clicking on sign-up, you agree to Spotify's
+
+                    <a href="#">Terms and Conditions of Use.</a>
+
+                </span>
+
+            </p>
+
+            <p>
+                <span>
+                    To learn more about how Spotify collects, uses, shares and protects your <br> data, please
+                    see
+                    <a href="#"> Spotify's Privacy Policy.</a>
+                </span>
+            </p>
+
+            <button class="btn">
+                <a href="#"> Sign up</a>
+            </button>
+            <p class="log_in">
+                <span>
+                    Have an account?
+                    <a href="login.html">Log in.</a>
+                </span>
+            </p>
+
+        </div>
+
+
+
+
+
+
+        </form>
+
+    </div>
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
